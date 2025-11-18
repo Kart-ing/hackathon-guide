@@ -47,7 +47,7 @@ const contentMap: Record<string, ResourceContent> = {
           'Submit early and iterate—many platforms allow updates until the deadline',
           'After the hackathon, update your project with "What I learned" and "What\'s next" sections to show growth'
         ],
-        imagePlaceholder: 'Screenshot of a winning Devpost project submission with video, description, and gallery'
+        imagePlaceholder: '/assets/devpost-example.png'
       },
       {
         heading: 'Pro Tips for Maximizing Success',

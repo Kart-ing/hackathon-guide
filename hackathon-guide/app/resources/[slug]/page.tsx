@@ -36,8 +36,18 @@ export default function ResourcePage({ params }: { params: { slug: string } }) {
                 </ul>
               )}
               {section.imagePlaceholder && (
-                <div className="my-6 border border-dashed border-white/20 rounded p-8 text-center opacity-60">
-                  <p className="text-sm">📷 Image Placeholder: {section.imagePlaceholder}</p>
+                <div className="my-6">
+                  {section.imagePlaceholder.startsWith('/') ? (
+                    <img 
+                      src={section.imagePlaceholder} 
+                      alt={section.heading}
+                      className="rounded border border-white/10 w-full"
+                    />
+                  ) : (
+                    <div className="border border-dashed border-white/20 rounded p-8 text-center opacity-60">
+                      <p className="text-sm">📷 Image Placeholder: {section.imagePlaceholder}</p>
+                    </div>
+                  )}
                 </div>
               )}
             </section>
