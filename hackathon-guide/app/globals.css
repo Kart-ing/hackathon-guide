@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0f14;
+  --primary: #00e5ff;
+  --secondary: #b084f7;
+  --accent: #00ff9c;
+  --card: #0e151b;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  @apply bg-[var(--bg)] text-white font-mono antialiased;
+}
+
+.glitch {
+  position: relative;
+  text-shadow: 0 0 2px var(--primary), 0 0 6px var(--secondary);
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.glitch::before { color: var(--primary); transform: translate(1px, 0); opacity: .8; }
+.glitch::after { color: var(--secondary); transform: translate(-1px, 0); opacity: .6; }
+
+.card-hover {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(0,229,255,.25);
+}
