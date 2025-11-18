@@ -1,7 +1,5 @@
 {
   "trailingSlash": false,
-  "buildCommand": "next build",
-  "outputDirectory": ".next",
   "headers": [
     {
       "source": "/(.*)",
