@@ -6,17 +6,17 @@ import AboutAuthor from '../components/AboutAuthor'
 export default function Page() {
   return (
     <div className="space-y-24 py-16">
+      <section id="about">
+        <AboutAuthor />
+      </section>
       <section id="home">
         <Hero />
       </section>
       <section id="resources">
         <Resources />
       </section>
-      <section id="strategy" className="pb-12">
+      <section id="strategy" className="pb-24">
         <StrategyTips />
-      </section>
-      <section id="about" className="pb-24">
-        <AboutAuthor />
       </section>
     </div>
   )
