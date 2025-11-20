@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { resources } from '../../../data/resources'
 import Link from 'next/link'
+import Image from 'next/image'
 import { getResourceContent } from '../../../data/resourceContent'
 
 export function generateStaticParams() {
@@ -38,10 +39,12 @@ export default function ResourcePage({ params }: { params: { slug: string } }) {
               {section.imagePlaceholder && (
                 <div className="my-6">
                   {section.imagePlaceholder.startsWith('/') ? (
-                    <img 
+                    <Image 
                       src={section.imagePlaceholder} 
                       alt={section.heading}
-                      className="rounded border border-white/10 w-full"
+                      width={1200}
+                      height={675}
+                      className="rounded border border-white/10 w-full h-auto"
                     />
                   ) : (
                     <div className="border border-dashed border-white/20 rounded p-8 text-center opacity-60">

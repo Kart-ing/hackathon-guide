@@ -5,7 +5,8 @@ import { Menu, X } from 'lucide-react'
 const links = [
   { href: '#home', label: 'Home' },
   { href: '#resources', label: 'Resources' },
-  { href: '#strategy', label: 'Strategy' }
+  { href: '#strategy', label: 'Strategy' },
+  { href: '#about', label: 'About' }
 ]
 
 export default function Navigation() {

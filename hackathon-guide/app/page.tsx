@@ -1,6 +1,7 @@
 import Hero from '../components/Hero'
 import Resources from '../components/Resources'
 import StrategyTips from '../components/StrategyTips'
+import AboutAuthor from '../components/AboutAuthor'
 
 export default function Page() {
   return (
@@ -11,8 +12,11 @@ export default function Page() {
       <section id="resources">
         <Resources />
       </section>
-      <section id="strategy" className="pb-24">
+      <section id="strategy" className="pb-12">
         <StrategyTips />
+      </section>
+      <section id="about" className="pb-24">
+        <AboutAuthor />
       </section>
     </div>
   )
