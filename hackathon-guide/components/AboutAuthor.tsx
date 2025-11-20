@@ -43,7 +43,7 @@ export default function AboutAuthor() {
             GitHub
           </a>
           <a 
-            href="https://linkedin.com/in/yourprofile" 
+            href="https://www.linkedin.com/in/kartikeypandey2004/" 
             target="_blank" 
             rel="noreferrer"
             className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
@@ -52,7 +52,7 @@ export default function AboutAuthor() {
             LinkedIn
           </a>
           <a 
-            href="mailto:your.email@psu.edu"
+            href="mailto:kartikeypandey.official@gmail.com"
             className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
           >
             <Mail size={18} />
