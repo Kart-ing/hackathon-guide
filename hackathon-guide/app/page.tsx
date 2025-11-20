@@ -6,11 +6,11 @@ import AboutAuthor from '../components/AboutAuthor'
 export default function Page() {
   return (
     <div className="space-y-24 py-16">
-      <section id="about">
-        <AboutAuthor />
-      </section>
       <section id="home">
         <Hero />
+      </section>
+      <section id="about">
+        <AboutAuthor />
       </section>
       <section id="resources">
         <Resources />
