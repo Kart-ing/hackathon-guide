@@ -11,7 +11,7 @@ export default function AboutAuthor() {
         </p>
         
         <p>
-          I've participated in 10+ hackathons, won multiple awards, and helped organize events for our CS community. This guide is a collection of resources and strategies I've learned through hundreds of hours of hacking, mentoring, and judging projects.
+          I've won in 9+ hackathons, gotten multiple awards, and helped organize teams participating in Hackathons in the PSU CS Community. This guide is a collection of resources and strategies I've learned through hundreds of hours of hacking, mentoring, and judging projects.
         </p>
 
         <div className="pt-4 border-t border-white/10">
