@@ -269,6 +269,384 @@ const contentMap: Record<string, ResourceContent> = {
     ],
     videoUrl: 'https://www.youtube.com/embed/2BID8_pGuqA',
     videoTitle: 'Hack Club Community Highlight'
+  },
+  'vs-code': {
+    sections: [
+      {
+        heading: 'What is VS Code?',
+        paragraphs: [
+          'Visual Studio Code (VS Code) is a free, open-source code editor built by Microsoft. It\'s lightweight, fast, and works on Windows, Mac, and Linux. With over 30,000 extensions and built-in Git support, VS Code has become the default editor for millions of developers worldwide.',
+          'For hackathons, VS Code is the ideal setup. It boots in seconds, supports every language and framework, and its IntelliSense autocomplete helps you code faster. Whether you\'re building a React app, Python API, or Arduino project, VS Code has you covered.'
+        ],
+        imagePlaceholder: 'Screenshot of VS Code interface with sidebar, editor, and terminal open'
+      },
+      {
+        heading: 'Why VS Code is Perfect for Hackathons',
+        paragraphs: [
+          'Speed and flexibility are everything in a 24-hour hackathon. VS Code\'s lightweight design means it won\'t slow you down, even on older laptops. The integrated terminal lets you run commands without switching windows, and Live Share enables real-time pair programming with teammates.',
+          'Extensions supercharge your workflow. Install language support, linters, formatters, and deployment tools in seconds. GitHub Copilot (AI autocomplete) can write boilerplate code for you, saving hours during crunch time.'
+        ],
+        list: [
+          'Free and open-source—works on any OS (Windows, Mac, Linux)',
+          'Integrated terminal for running build commands, git, npm, and more',
+          'IntelliSense autocomplete for JavaScript, Python, TypeScript, and 50+ languages',
+          'Live Share extension for real-time collaborative coding with teammates',
+          'Git integration built-in—commit, push, pull without leaving the editor',
+          'Thousands of extensions: Prettier (formatting), ESLint (linting), Copilot (AI code)',
+          'Remote development: SSH into servers, code in Docker containers, use WSL on Windows'
+        ],
+        imagePlaceholder: 'Screenshot of VS Code extensions marketplace showing popular hackathon tools'
+      },
+      {
+        heading: 'How to Set Up VS Code for a Hackathon',
+        paragraphs: [
+          'Download VS Code from code.visualstudio.com and install it in under 2 minutes. On first launch, you\'ll see a welcome screen—skip the tutorial and go straight to Extensions (Ctrl+Shift+X or Cmd+Shift+X). Install essentials: your language pack (Python, JavaScript, etc.), Prettier, and Live Share.',
+          'Configure your settings for speed. Enable auto-save (File → Auto Save), set tab size to 2 spaces, and choose a theme that\'s easy on the eyes during long sessions. Dark+ (default dark) is solid, but many hackers prefer One Dark Pro or Dracula.'
+        ],
+        list: [
+          'Install VS Code from code.visualstudio.com (free, 90MB download)',
+          'Open Extensions panel (Ctrl+Shift+X) and install your language support',
+          'Add Prettier for auto-formatting code on save (keeps team code consistent)',
+          'Install Live Share to code with teammates in real-time (better than screen sharing)',
+          'Set up GitHub Copilot if you have access (huge time-saver for boilerplate)',
+          'Enable Auto Save: File → Auto Save (never lose work from crashes)',
+          'Install GitLens for enhanced git blame, history, and branch visualization',
+          'Add Thunder Client or REST Client for testing APIs without Postman'
+        ],
+        imagePlaceholder: 'Screenshot of VS Code settings panel with recommended hackathon configurations'
+      },
+      {
+        heading: 'Pro Tips for Coding Fast',
+        paragraphs: [
+          'Learn keyboard shortcuts—they save hours over a weekend. Ctrl+P (Cmd+P) for quick file search, Ctrl+Shift+F for project-wide find, and Ctrl+` for toggling the terminal. Use multi-cursor editing (Alt+Click) to edit multiple lines simultaneously.',
+          'Use snippets and Emmet for HTML/CSS. Type "div.container>ul>li*5" and hit Tab—VS Code expands it into full HTML. Create custom snippets for repetitive code patterns (API routes, React components, etc.).'
+        ],
+        list: [
+          'Master Ctrl+P (Quick Open) to jump to any file instantly',
+          'Use Ctrl+D to select next occurrence—edit multiple words at once',
+          'Ctrl+Shift+L selects all occurrences of current selection',
+          'Alt+Up/Down moves lines up or down without cut/paste',
+          'Ctrl+/ toggles line comments (works in every language)',
+          'Use Emmet shortcuts for HTML: ul>li*3 expands to a full list',
+          'Install code snippets for your framework (ES7 React snippets, Python snippets)',
+          'Use Zen Mode (Ctrl+K Z) to hide distractions and focus during crunch time'
+        ],
+        imagePlaceholder: 'Screenshot of VS Code multi-cursor editing and Emmet expansion in action'
+      },
+      {
+        heading: 'Essential Extensions for Hackathons',
+        paragraphs: [
+          'Extensions turn VS Code into a specialized IDE for your tech stack. For web dev: install Prettier, ESLint, and Auto Rename Tag. For Python: Python extension + Pylance. For React/Next.js: ES7 React snippets + Tailwind IntelliSense.',
+          'GitHub Copilot is a game-changer if you have access (free for students via GitHub Education Pack). It autocompletes entire functions based on comments—just write "// function to validate email" and Copilot generates the code. It\'s like pair programming with AI.'
+        ],
+        list: [
+          'Prettier: Auto-format code on save (consistency across team)',
+          'ESLint: Catch bugs and enforce code style',
+          'Live Share: Real-time collaborative editing (like Google Docs for code)',
+          'GitHub Copilot: AI-powered autocomplete (free for students)',
+          'GitLens: Supercharged Git (blame, history, branch comparison)',
+          'Thunder Client: Test APIs inside VS Code (no need for Postman)',
+          'Error Lens: Show errors inline (no need to hover)',
+          'Path IntelliSense: Autocomplete file paths in imports',
+          'Tailwind CSS IntelliSense: Autocomplete for Tailwind classes',
+          'Docker: Manage containers directly from VS Code'
+        ]
+      }
+    ],
+    videoUrl: 'https://www.youtube.com/embed/B-s71n0dHUk'
+  },
+  'firebase': {
+    sections: [
+      {
+        heading: 'What is Firebase?',
+        paragraphs: [
+          'Firebase is Google\'s all-in-one backend platform that handles authentication, databases, hosting, storage, and serverless functions. Instead of building and managing your own backend infrastructure, Firebase gives you production-ready services in minutes.',
+          'For hackathons, Firebase is a cheat code. Need user login? Firebase Auth supports email, Google, GitHub, and anonymous sign-in out of the box. Need a database? Firestore gives you a real-time NoSQL database with zero config. Need to deploy? Firebase Hosting pushes your site live in one command.'
+        ],
+        imagePlaceholder: 'Screenshot of Firebase console showing Auth, Firestore, Hosting, and Functions'
+      },
+      {
+        heading: 'Why Firebase Dominates Hackathons',
+        paragraphs: [
+          'Firebase eliminates backend complexity. You can build a full-stack app—frontend, database, auth, and hosting—without writing a single line of server code. This means you focus on features that wow judges, not debugging Express routes or configuring databases.',
+          'The free tier is extremely generous: 50K reads/day on Firestore, unlimited auth users, 10GB hosting bandwidth, and 125K function invocations. For a 24-hour hackathon, you\'ll never hit these limits. Plus, Firebase scales automatically—if your demo goes viral, it won\'t crash.'
+        ],
+        list: [
+          'Authentication in 5 minutes: Google, email, GitHub, phone, anonymous login',
+          'Firestore database: Real-time NoSQL with offline support and automatic syncing',
+          'Cloud Storage: Upload images, files, videos with built-in CDN',
+          'Hosting: Deploy static sites (React, Vue, Next.js) with one command',
+          'Cloud Functions: Write serverless backend APIs (Node.js, Python)',
+          'Free tier: 50K Firestore reads/day, unlimited auth, 10GB hosting bandwidth',
+          'Real-time updates: Changes sync across all clients instantly (great for chat apps)'
+        ],
+        imagePlaceholder: 'Diagram showing Firebase services flow: Auth → Firestore → Functions → Hosting'
+      },
+      {
+        heading: 'How to Use Firebase in a Hackathon',
+        paragraphs: [
+          'Start by creating a Firebase project at console.firebase.google.com. Click "Add Project," name it, disable Google Analytics (saves time), and you\'re ready. Install the Firebase CLI globally: npm install -g firebase-tools, then run firebase login to authenticate.',
+          'Initialize Firebase in your project with firebase init. Select the services you need (Firestore, Hosting, Functions). Firebase generates config files and sets up your project structure. Add the Firebase SDK to your frontend, paste in your config keys, and you\'re live.'
+        ],
+        list: [
+          'Go to console.firebase.google.com and create a new project (1 minute)',
+          'Install Firebase CLI: npm install -g firebase-tools',
+          'Run firebase login to authenticate your Google account',
+          'In your project folder, run firebase init and select services (Firestore, Hosting)',
+          'Add Firebase to your app: npm install firebase (or add via CDN)',
+          'Copy config keys from Firebase console → paste into your app',
+          'Deploy with firebase deploy --only hosting (site goes live instantly)',
+          'Set up Firestore rules for security (start with test mode, lock down later)'
+        ],
+        imagePlaceholder: 'Screenshot of Firebase init wizard and console config keys'
+      },
+      {
+        heading: 'Pro Tips for Firebase Success',
+        paragraphs: [
+          'Use Firebase Auth + Firestore together for user-specific data. After a user signs in, store their profile in Firestore under /users/{userId}. Use security rules to ensure users can only read/write their own data. This pattern is bulletproof and takes 10 minutes to set up.',
+          'Leverage Firebase\'s real-time features for impressive demos. Build a live chat, collaborative whiteboard, or real-time leaderboard—changes sync instantly across all devices. Judges love seeing multiple browser windows updating simultaneously.'
+        ],
+        list: [
+          'Start with Firestore in test mode for speed, then add security rules before demo',
+          'Use Firebase Auth UI library for instant login pages (no custom forms needed)',
+          'Store user data in Firestore at /users/{uid} and use security rules to protect it',
+          'Use onSnapshot() for real-time updates—perfect for chat, notifications, dashboards',
+          'Deploy early: firebase deploy takes 30 seconds and gives you a live URL',
+          'Use Cloud Functions for sensitive operations (API calls, payments, email)',
+          'Add Firebase Analytics to track user behavior during your demo',
+          'Use Firebase Storage for user uploads (images, PDFs, videos) with automatic CDN'
+        ],
+        imagePlaceholder: 'Code snippet showing Firebase Auth + Firestore setup in React'
+      },
+      {
+        heading: 'Common Hackathon Use Cases',
+        paragraphs: [
+          'Firebase shines for apps that need user accounts and data persistence. Examples: social networks, productivity tools, voting apps, collaborative editors, and marketplaces. The combination of Auth + Firestore + Hosting covers 90% of hackathon project needs.',
+          'For AI/ML projects, use Firebase Functions to call external APIs (OpenAI, Hugging Face) securely. Your frontend triggers a function, which makes the API call with your secret key (never exposed to users), then returns the result. This pattern keeps your keys safe and your demo professional.'
+        ]
+      }
+    ],
+    videoUrl: 'https://www.youtube.com/embed/q5J5ho7YUhA'
+  },
+  'hugging-face': {
+    sections: [
+      {
+        heading: 'What is Hugging Face?',
+        paragraphs: [
+          'Hugging Face is the GitHub of AI—a platform hosting 500K+ machine learning models, datasets, and interactive demos (called "Spaces"). Founded in 2016, it\'s become the go-to hub for developers to discover, test, and deploy AI models without training them from scratch.',
+          'For hackathons, Hugging Face is a goldmine. Need sentiment analysis? Image classification? Text generation? Instead of training a model for days, you can use pre-trained models that are production-ready and free to use. Many are optimized to run in browsers or on CPU, perfect for quick prototypes.'
+        ],
+        imagePlaceholder: 'Screenshot of Hugging Face homepage with trending models and spaces'
+      },
+      {
+        heading: 'Why Hugging Face is a Hackathon Superpower',
+        paragraphs: [
+          'Pre-trained models save you from reinventing the wheel. Want to build a chatbot? Use Meta\'s Llama or Google\'s Flan-T5. Need image generation? Stable Diffusion is there. Object detection? YOLO models are ready. You focus on the product, not the AI research.',
+          'Hugging Face also offers Inference API—call models via simple HTTP requests without managing infrastructure. For hackathons, this means you can integrate GPT-like text generation, image captioning, or speech recognition in under 10 lines of code.'
+        ],
+        list: [
+          '500K+ pre-trained models for NLP, computer vision, audio, and multimodal tasks',
+          'Inference API: Call models via REST API (no GPU setup, no model hosting)',
+          'Datasets library: 100K+ datasets for training or testing models',
+          'Spaces: Deploy ML demos with Gradio or Streamlit (shareable links)',
+          'Transformers library: Easy-to-use Python library for loading models',
+          'Free tier: 30K API requests/month, unlimited model downloads',
+          'Community models: Fine-tuned for specific tasks (legal documents, medical text, etc.)'
+        ],
+        imagePlaceholder: 'Screenshot of Hugging Face model card with usage code snippet'
+      },
+      {
+        heading: 'How to Use Hugging Face in a Hackathon',
+        paragraphs: [
+          'Start by browsing models at huggingface.co/models. Filter by task (text generation, image classification, etc.) and sort by downloads or trending. Click a model to see its card—usage examples, performance benchmarks, and limitations are all documented.',
+          'To use a model in Python, install transformers: pip install transformers, then load the model in 3 lines. For quick testing, use the Inference API—no installation needed, just send an HTTP POST request with your text/image and get results instantly.'
+        ],
+        list: [
+          'Browse huggingface.co/models and filter by task (e.g., "text-generation")',
+          'Click a model → read the Model Card for usage instructions and limitations',
+          'Install Transformers: pip install transformers torch',
+          'Load a model: from transformers import pipeline; classifier = pipeline("sentiment-analysis")',
+          'For quick prototypes, use Inference API (no local setup): curl POST requests',
+          'Sign up for free API key at huggingface.co/settings/tokens',
+          'Deploy a demo with Spaces: create a Gradio app, push to HF, get shareable link',
+          'Use datasets library to load training data: from datasets import load_dataset'
+        ],
+        imagePlaceholder: 'Code snippet showing Transformers pipeline usage and Inference API example'
+      },
+      {
+        heading: 'Pro Tips for AI Hackathon Projects',
+        paragraphs: [
+          'Choose the right model size for your use case. Larger models (7B+ parameters) are more accurate but slower. For real-time demos, use smaller distilled models like DistilBERT or TinyLlama—they\'re 5-10x faster and still impressive.',
+          'Use Gradio or Streamlit to build interactive demos. Gradio lets you create a UI for your model in 10 lines of code, then deploy it to Hugging Face Spaces for free. Judges love seeing live demos they can interact with, not just screenshots.'
+        ],
+        list: [
+          'Start with small models for speed (DistilBERT, BART-base, Flan-T5-small)',
+          'Use Inference API for demos—no need to run models locally during presentations',
+          'Deploy Gradio apps to Spaces: judges can test your model from any device',
+          'Combine models: use Whisper for speech-to-text + GPT for response generation',
+          'Fine-tune models if you have domain-specific data (legal, medical, finance)',
+          'Cache API responses to avoid rate limits during demos',
+          'Browse Spaces for inspiration—see how others build ML demos',
+          'Tag @huggingface on Twitter when you ship—they retweet cool projects'
+        ],
+        imagePlaceholder: 'Screenshot of a Gradio demo deployed on Hugging Face Spaces'
+      },
+      {
+        heading: 'Popular Models for Hackathons',
+        paragraphs: [
+          'For text: GPT-2, Flan-T5, Llama-2 (chat), BERT (classification). For images: Stable Diffusion (generation), CLIP (image-text matching), YOLO (object detection). For audio: Whisper (speech-to-text), Bark (text-to-speech). For multimodal: BLIP (image captioning), LLaVA (vision-language).',
+          'If you\'re stuck, explore Spaces for inspiration. Popular demos show what\'s possible—chatbots, AI art generators, video summarizers, and more. Fork a Space, customize it, and make it your own.'
+        ]
+      }
+    ],
+    videoUrl: 'https://www.youtube.com/embed/wMbJV1bPw3Q'
+  },
+  'modal': {
+    sections: [
+      {
+        heading: 'What is Modal?',
+        paragraphs: [
+          'Modal is a serverless platform for running Python code in the cloud with instant access to GPUs. Instead of managing EC2 instances or Kubernetes clusters, you write Python functions and Modal handles infrastructure, scaling, and billing. It\'s like AWS Lambda, but designed for AI/ML workloads.',
+          'For hackathons, Modal is a secret weapon. Need to run a large language model? Fine-tune Stable Diffusion? Process 10,000 images? Modal spins up GPUs on-demand, runs your code, and shuts down when done. You only pay for compute time, making it extremely affordable for prototypes.'
+        ],
+        imagePlaceholder: 'Screenshot of Modal dashboard showing GPU job execution and costs'
+      },
+      {
+        heading: 'Why Modal is Perfect for AI Hackathons',
+        paragraphs: [
+          'Most students don\'t have access to powerful GPUs. Modal gives you A100s, H100s, and T4s on-demand for pennies per hour. This levels the playing field—you can run models that would take hours on CPU in seconds on Modal\'s GPUs.',
+          'Modal also handles dependencies automatically. Specify your Python packages, CUDA version, and system libraries in code—Modal builds a container and caches it. No more "works on my machine" issues or Docker debugging during hackathons.'
+        ],
+        list: [
+          'Serverless GPUs: A100, H100, T4 GPUs on-demand (no setup, no server management)',
+          'Pay-per-second billing: Only charged when code is running (idle = $0)',
+          'Free tier: $30/month credits (enough for most hackathon projects)',
+          'Automatic scaling: Run 1 job or 1,000 in parallel—Modal handles it',
+          'Fast cold starts: Functions boot in 1-2 seconds (vs. 30s+ on other platforms)',
+          'Built-in caching: Models, datasets, and dependencies are cached between runs',
+          'Python-first: Write normal Python, add @app.function decorator, deploy'
+        ],
+        imagePlaceholder: 'Diagram showing Modal workflow: Local Python → Modal GPU → Results'
+      },
+      {
+        heading: 'How to Use Modal in a Hackathon',
+        paragraphs: [
+          'Install Modal with pip install modal and create an account at modal.com. Run modal token new to authenticate. Create a Python file, import modal, and define an App. Decorate functions with @app.function(gpu="T4") to run them on GPUs.',
+          'Deploy with modal deploy app.py—Modal builds your environment and creates a serverless endpoint. Call it from your frontend via HTTP, or run it directly from Python. For batch jobs (image processing, data analysis), use modal run to execute locally or in the cloud.'
+        ],
+        list: [
+          'Install Modal: pip install modal',
+          'Sign up at modal.com and run modal token new to authenticate',
+          'Create app: import modal; app = modal.App("my-app")',
+          'Add GPU function: @app.function(gpu="T4") def process_image(img): ...',
+          'Deploy: modal deploy app.py (creates serverless endpoint)',
+          'Call from frontend: POST to modal endpoint with your data',
+          'For batch jobs: modal run app.py (processes data and returns results)',
+          'Use @app.function(image=...) to specify custom Docker images or dependencies'
+        ],
+        imagePlaceholder: 'Code snippet showing Modal function with GPU decorator and deployment'
+      },
+      {
+        heading: 'Pro Tips for Modal Success',
+        paragraphs: [
+          'Use Modal for heavy lifting, not everything. Run your frontend on Vercel and call Modal for AI inference, video processing, or data crunching. This keeps your stack simple and costs low—GPUs only spin up when needed.',
+          'Cache models and datasets in Modal volumes. Instead of re-downloading a 7GB model on every run, store it in a Modal volume and mount it. This cuts cold start time from 60 seconds to 2 seconds.'
+        ],
+        list: [
+          'Start with T4 GPUs (cheapest) and upgrade to A100 only if needed',
+          'Use Modal volumes to cache large models and datasets',
+          'Test locally first: @app.local_entrypoint() runs code on your machine before deploying',
+          'Set timeout limits: @app.function(timeout=300) prevents runaway costs',
+          'Use Modal for inference during demos—frontend stays fast, GPUs handle AI',
+          'Parallelize batch jobs: map() over thousands of inputs simultaneously',
+          'Monitor costs in real-time on Modal dashboard during development',
+          'Combine with Hugging Face: load models from HF, run inference on Modal GPUs'
+        ],
+        imagePlaceholder: 'Screenshot of Modal volume configuration and model caching setup'
+      },
+      {
+        heading: 'Common Hackathon Use Cases',
+        paragraphs: [
+          'Modal excels at AI inference, batch processing, and fine-tuning. Use cases: run Stable Diffusion for AI art generation, fine-tune Llama-2 for custom chatbots, process thousands of images with YOLO for object detection, or transcribe hours of audio with Whisper.',
+          'For real-time demos, deploy a Modal function that your frontend calls. Example: user uploads an image → frontend POSTs to Modal → Modal runs image classification on A100 → returns result in 500ms. Judges see instant AI without your laptop melting.'
+        ]
+      }
+    ],
+    videoUrl: 'https://www.youtube.com/embed/X4gKBO1me0Y'
+  },
+  'openai': {
+    sections: [
+      {
+        heading: 'What is OpenAI?',
+        paragraphs: [
+          'OpenAI is the research lab behind GPT-4, ChatGPT, DALL-E, and Whisper. Their API platform gives developers programmatic access to these models for text generation, image creation, speech recognition, and embeddings. Instead of building AI from scratch, you call OpenAI\'s API and get state-of-the-art results.',
+          'For hackathons, OpenAI APIs are the fastest path to impressive AI features. Need a chatbot? GPT-4 can converse naturally. Need image generation? DALL-E creates art from text. Need to analyze documents? GPT-4 can summarize, extract data, and answer questions.'
+        ],
+        imagePlaceholder: 'Screenshot of OpenAI platform dashboard with API keys and usage stats'
+      },
+      {
+        heading: 'Why OpenAI Dominates Hackathon AI',
+        paragraphs: [
+          'OpenAI models are the best in the world at their tasks. GPT-4 outperforms open-source alternatives on reasoning, code generation, and instruction-following. DALL-E 3 creates higher-quality images than most competitors. Whisper is the gold standard for speech-to-text.',
+          'The API is also incredibly simple. Send a POST request with your prompt, get a response in JSON. No model hosting, no GPU management, no fine-tuning required. For hackathons, this means you can integrate AI in 10 minutes and spend the rest of your time on UX and features.'
+        ],
+        list: [
+          'GPT-4: Best-in-class text generation, reasoning, code, and conversation',
+          'DALL-E 3: High-quality image generation from text prompts',
+          'Whisper: Accurate speech-to-text in 50+ languages',
+          'Embeddings: Convert text to vectors for semantic search and recommendations',
+          'Vision API: Analyze images and extract information with GPT-4V',
+          'Free tier: $5 credit on signup (enough for ~100 GPT-4 requests)',
+          'Pay-as-you-go: ~$0.01 per 1K GPT-3.5 tokens, ~$0.03 per 1K GPT-4 tokens'
+        ],
+        imagePlaceholder: 'Comparison table of OpenAI models: GPT-4, GPT-3.5, DALL-E, Whisper'
+      },
+      {
+        heading: 'How to Use OpenAI in a Hackathon',
+        paragraphs: [
+          'Sign up at platform.openai.com and generate an API key. Install the SDK: pip install openai (Python) or npm install openai (JavaScript). In your code, import the library, set your API key, and call the model with a prompt. For GPT-4, use the chat completions endpoint with messages.',
+          'Never expose your API key in frontend code—it can be stolen and abused. Instead, create a backend endpoint (Vercel serverless function, Firebase Cloud Function, or Express route) that calls OpenAI. Your frontend sends a request to your backend, which proxies it to OpenAI securely.'
+        ],
+        list: [
+          'Sign up at platform.openai.com and create an API key',
+          'Install SDK: pip install openai (Python) or npm install openai (Node)',
+          'Set API key as environment variable: export OPENAI_API_KEY="sk-..."',
+          'For GPT-4: client.chat.completions.create(model="gpt-4", messages=[...])',
+          'For DALL-E: client.images.generate(prompt="...", n=1, size="1024x1024")',
+          'For Whisper: client.audio.transcriptions.create(file=audio, model="whisper-1")',
+          'Never commit API keys—use .env files and add to .gitignore',
+          'Use backend proxy to hide keys: frontend → your API → OpenAI API'
+        ],
+        imagePlaceholder: 'Code snippet showing OpenAI API call in Python and JavaScript'
+      },
+      {
+        heading: 'Pro Tips for OpenAI Projects',
+        paragraphs: [
+          'Use GPT-3.5-turbo for speed and cost, GPT-4 for quality. During development, prototype with 3.5 (10x cheaper), then upgrade to GPT-4 for the final demo. Set max_tokens to limit response length and control costs—hackathon demos rarely need 4,000-token essays.',
+          'Use system prompts to control behavior. For example: "You are a helpful assistant for college students planning hackathon projects. Be concise and actionable." This shapes GPT\'s responses to match your use case.'
+        ],
+        list: [
+          'Start with GPT-3.5-turbo for prototyping (fast, cheap, good enough)',
+          'Upgrade to GPT-4 for final demo if you need better reasoning or accuracy',
+          'Set max_tokens=500 to limit response length and costs',
+          'Use system prompts to control tone, format, and personality',
+          'Stream responses for real-time typing effect: stream=True',
+          'Cache common responses to avoid redundant API calls',
+          'Use function calling to let GPT trigger actions (send email, query DB)',
+          'Monitor usage on OpenAI dashboard—set spending limits to avoid surprises',
+          'Combine with Whisper: transcribe audio → GPT summarizes/answers questions'
+        ],
+        imagePlaceholder: 'Screenshot of OpenAI usage dashboard with cost breakdown and rate limits'
+      },
+      {
+        heading: 'Common Hackathon Use Cases',
+        paragraphs: [
+          'Chatbots and virtual assistants are the most popular use case—GPT-4 can answer questions, provide recommendations, or roleplay characters. For content creation, use DALL-E to generate logos, illustrations, or marketing images. For accessibility, use Whisper to transcribe lectures or meetings.',
+          'Advanced projects combine multiple APIs: Whisper (speech-to-text) → GPT-4 (summarize/answer) → text-to-speech (read response). Or: user uploads document → embeddings (semantic search) → GPT-4 (Q&A). The possibilities are endless.'
+        ]
+      }
+    ],
+    videoUrl: 'https://www.youtube.com/embed/c-g6epk3fFE'
   }
 }
 
