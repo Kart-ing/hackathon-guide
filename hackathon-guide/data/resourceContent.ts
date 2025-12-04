@@ -6,6 +6,7 @@ export type ResourceContent = {
     imagePlaceholder?: string
   }[]
   videoUrl?: string
+  videoTitle?: string
 }
 
 const contentMap: Record<string, ResourceContent> = {
@@ -266,7 +267,8 @@ const contentMap: Record<string, ResourceContent> = {
         ]
       }
     ],
-    videoUrl: 'https://www.youtube.com/embed/2BID8_pGuqA'
+    videoUrl: 'https://www.youtube.com/embed/2BID8_pGuqA',
+    videoTitle: 'Hack Club Community Highlight'
   }
 }
 

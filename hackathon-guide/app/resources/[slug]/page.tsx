@@ -25,7 +25,93 @@ export default function ResourcePage({ params }: { params: { slug: string } }) {
 
       {content && (
         <article className="mt-8 space-y-8 prose prose-invert max-w-none">
-          {content.sections.map((section, i) => (
+          {/* For Hack Club, show video after first section */}
+          {item.slug === 'hack-club' && content.sections.length > 0 && (
+            <>
+              {/* First section */}
+              <section>
+                <h2 className="text-2xl font-semibold mb-3">{content.sections[0].heading}</h2>
+                <div className="space-y-3 opacity-90">
+                  {content.sections[0].paragraphs.map((p, j) => <p key={j}>{p}</p>)}
+                </div>
+                {content.sections[0].list && (
+                  <ul className="list-disc pl-6 space-y-2 mt-3">
+                    {content.sections[0].list.map((li, k) => <li key={k}>{li}</li>)}
+                  </ul>
+                )}
+                {content.sections[0].imagePlaceholder && (
+                  <div className="my-6">
+                    {content.sections[0].imagePlaceholder.startsWith('/') ? (
+                      <Image 
+                        src={content.sections[0].imagePlaceholder} 
+                        alt={content.sections[0].heading}
+                        width={1200}
+                        height={675}
+                        className="rounded border border-white/10 w-full h-auto"
+                      />
+                    ) : (
+                      <div className="border border-dashed border-white/20 rounded p-8 text-center opacity-60">
+                        <p className="text-sm">📷 Image Placeholder: {content.sections[0].imagePlaceholder}</p>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </section>
+              
+              {/* Video after first section */}
+              {content.videoUrl && (
+                <section className="my-8">
+                  <h2 className="text-2xl font-semibold mb-4">{content.videoTitle || 'Video Tutorial'}</h2>
+                  <div className="aspect-video rounded overflow-hidden border border-white/10">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={content.videoUrl}
+                      title="YouTube video"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
+                  </div>
+                </section>
+              )}
+              
+              {/* Remaining sections */}
+              {content.sections.slice(1).map((section, i) => (
+                <section key={i + 1}>
+                  <h2 className="text-2xl font-semibold mb-3">{section.heading}</h2>
+                  <div className="space-y-3 opacity-90">
+                    {section.paragraphs.map((p, j) => <p key={j}>{p}</p>)}
+                  </div>
+                  {section.list && (
+                    <ul className="list-disc pl-6 space-y-2 mt-3">
+                      {section.list.map((li, k) => <li key={k}>{li}</li>)}
+                    </ul>
+                  )}
+                  {section.imagePlaceholder && (
+                    <div className="my-6">
+                      {section.imagePlaceholder.startsWith('/') ? (
+                        <Image 
+                          src={section.imagePlaceholder} 
+                          alt={section.heading}
+                          width={1200}
+                          height={675}
+                          className="rounded border border-white/10 w-full h-auto"
+                        />
+                      ) : (
+                        <div className="border border-dashed border-white/20 rounded p-8 text-center opacity-60">
+                          <p className="text-sm">📷 Image Placeholder: {section.imagePlaceholder}</p>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </section>
+              ))}
+            </>
+          )}
+          
+          {/* For all other resources, show sections normally */}
+          {item.slug !== 'hack-club' && content.sections.map((section, i) => (
             <section key={i}>
               <h2 className="text-2xl font-semibold mb-3">{section.heading}</h2>
               <div className="space-y-3 opacity-90">
@@ -56,23 +142,24 @@ export default function ResourcePage({ params }: { params: { slug: string } }) {
             </section>
           ))}
 
-          {content.videoUrl && (
-            <section className="mt-10">
-              <h2 className="text-2xl font-semibold mb-4">Video Tutorial</h2>
-              <div className="aspect-video rounded overflow-hidden border border-white/10">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={content.videoUrl}
-                  title="YouTube video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              </div>
-            </section>
-          )}
         </article>
+      )}
+
+      {content && content.videoUrl && item.slug !== 'hack-club' && (
+        <section className="mt-10">
+          <h2 className="text-2xl font-semibold mb-4">{content.videoTitle || 'Video Tutorial'}</h2>
+          <div className="aspect-video rounded overflow-hidden border border-white/10">
+            <iframe
+              width="100%"
+              height="100%"
+              src={content.videoUrl}
+              title="YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+        </section>
       )}
 
       <div className="mt-12 flex gap-4 border-t border-white/10 pt-6">
