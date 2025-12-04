@@ -647,6 +647,153 @@ const contentMap: Record<string, ResourceContent> = {
       }
     ],
     videoUrl: 'https://www.youtube.com/embed/c-g6epk3fFE'
+  },
+  'github-trending': {
+    sections: [
+      {
+        heading: 'What is GitHub Trending?',
+        paragraphs: [
+          'GitHub Trending is a curated feed of the most popular repositories on GitHub, updated daily. It showcases projects that are gaining traction—measured by stars, forks, and activity. You can filter by programming language, time range (today, this week, this month), and spoken language.',
+          'For hackathons, GitHub Trending is a goldmine for discovering cutting-edge tools, frameworks, and project ideas. Trending repos often solve problems developers are currently facing, making them perfect inspiration for hackathon projects that judges will find relevant and timely.'
+        ],
+        imagePlaceholder: 'Screenshot of GitHub Trending page showing top repositories and filters'
+      },
+      {
+        heading: 'Why GitHub Trending is Essential for Ideation',
+        paragraphs: [
+          'Trending repos reveal what\'s hot in tech right now. A new AI library trending this week? Build a hackathon project using it and you\'ll have judges asking "How did you even know about this?" Being early to emerging tools shows initiative and technical awareness.',
+          'GitHub Trending also exposes you to diverse problem domains. Browse trending repos in categories you don\'t usually work in—data science, DevOps, game dev—and you\'ll discover problems you didn\'t know existed. Many winning hackathon projects come from applying solutions from one domain to another.'
+        ],
+        list: [
+          'Daily updates: New trending repos every 24 hours across all languages',
+          'Filter by language: Python, JavaScript, Rust, Go, TypeScript, etc.',
+          'Time ranges: Today (bleeding edge), This Week (proven traction), This Month (stable)',
+          'Spoken language filter: Discover projects from global developer communities',
+          'See stars, forks, and descriptions at a glance',
+          'Explore trending developers: Follow people building cool stuff',
+          'Zero barriers: No account needed to browse and get inspired'
+        ],
+        imagePlaceholder: 'Screenshot showing GitHub Trending language and time filters in action'
+      },
+      {
+        heading: 'How to Use GitHub Trending for Hackathons',
+        paragraphs: [
+          'Start browsing GitHub Trending 1-2 weeks before your hackathon. Set aside 15 minutes daily to scan the top 10 repos. Look for patterns: Are multiple ML repos trending? Is there a new framework everyone\'s excited about? These signals indicate what tech judges and developers care about right now.',
+          'When you find an interesting repo, don\'t just star it—clone it, run the demos, and read the docs. Understanding how a tool works before the hackathon gives you a massive head start. During the event, you\'ll integrate it confidently while others are still reading tutorials.'
+        ],
+        list: [
+          'Visit github.com/trending daily in the weeks leading up to your hackathon',
+          'Filter by your primary language (Python, JS, etc.) to find relevant tools',
+          'Star repos that solve problems you care about (build your toolkit)',
+          'Read README files: trending repos have excellent documentation',
+          'Clone and test repos locally: hands-on experience beats bookmarking',
+          'Check "Issues" tab: see what features users want (potential hackathon ideas)',
+          'Look at "Used by" section: see how others integrate the tool',
+          'Follow contributors: learn from developers building trending projects'
+        ],
+        imagePlaceholder: 'Screenshot of a trending repo README with usage examples and documentation'
+      },
+      {
+        heading: 'Pro Tips for Finding Hackathon Ideas',
+        paragraphs: [
+          'Use trending repos as building blocks, not complete solutions. Example: see a trending sentiment analysis library? Build a mental health chatbot for students. Find a new map visualization tool? Create a campus safety tracker. The magic is in the application, not the tool itself.',
+          'Combine trending repos from different categories. Trending AI model + trending data visualization tool + trending authentication library = a full-stack hackathon project. Judges love seeing multiple cutting-edge technologies working together.'
+        ],
+        list: [
+          'Bookmark repos with "awesome-" prefix (curated lists of tools and resources)',
+          'Look for repos tagged "hackathon" or "beginner-friendly"',
+          'Check trending repos in languages you DON\'T know—might find ideas to port',
+          'Browse "This Month" during hackathon season (Sept-Nov, Feb-Apr) for hackathon tools',
+          'Star template repos: boilerplates for React, Next.js, Flask save setup time',
+          'Use GitHub\'s "Topics" feature: click topics like "machine-learning" to explore',
+          'Follow trending repos by hackathon sponsors (they love seeing their tools used)',
+          'Check trending Jupyter notebooks: great for data science project ideas'
+        ],
+        imagePlaceholder: 'Screenshot of GitHub topics and awesome lists related to hackathons'
+      },
+      {
+        heading: 'Spotting Trends and Opportunities',
+        paragraphs: [
+          'Pay attention to recurring themes. If 3 repos about AI code generation trend in one week, that\'s a signal: developers want better coding tools. Build something in that space—a VSCode extension, a CLI tool, or a web playground—and you\'re riding the wave.',
+          'Don\'t ignore non-code repos. Trending datasets, research papers, and design resources can spark unique hackathon ideas. A trending dataset about climate change? Build a visualization dashboard. Trending UI kit? Use it to make your hackathon project look professional in minutes.'
+        ]
+      }
+    ],
+    videoUrl: 'https://www.youtube.com/embed/qU0juXSWaXk'
+  },
+  'google-trends': {
+    sections: [
+      {
+        heading: 'What is Google Trends?',
+        paragraphs: [
+          'Google Trends shows what the world is searching for in real-time. It tracks search volume for keywords, topics, and questions across Google Search, YouTube, Images, News, and Shopping. You can compare terms, see regional interest, and explore related queries that are rising in popularity.',
+          'For hackathons, Google Trends validates whether your idea solves a real problem people care about. If searches for "mental health apps" are rising 200% year-over-year, building a wellness chatbot isn\'t just creative—it\'s solving a documented, growing need. Judges love data-backed problem statements.'
+        ],
+        imagePlaceholder: 'Screenshot of Google Trends homepage with trending searches and explore tool'
+      },
+      {
+        heading: 'Why Google Trends is a Validation Superpower',
+        paragraphs: [
+          'Google Trends turns hunches into evidence. Instead of guessing whether people care about your problem, you can show judges a graph: "Searches for \'student budget tracker\' have grown 150% since 2022." This transforms your pitch from "I think students need this" to "The data proves students need this."',
+          'Trends also reveals geographic and demographic patterns. Discover that your idea is popular in specific regions or spiking during certain times of year? Tailor your hackathon project to that audience. Judges appreciate solutions designed for specific, validated user segments.'
+        ],
+        list: [
+          'Real-time search data: See what\'s trending right now globally or locally',
+          'Compare up to 5 keywords: Validate which solution approach is more popular',
+          'Filter by region: Discover where your target audience is concentrated',
+          'Time ranges: Past hour, day, week, month, year, or custom date ranges',
+          'Related queries: Find what else people search for (discover adjacent problems)',
+          'Rising searches: Identify breakout trends before they peak',
+          'Category filters: Technology, Health, Finance, etc. for focused insights',
+          'Export data: Download CSVs to include in pitch decks or demos'
+        ],
+        imagePlaceholder: 'Screenshot of Google Trends comparison chart showing multiple keywords over time'
+      },
+      {
+        heading: 'How to Use Google Trends for Hackathons',
+        paragraphs: [
+          'Start with broad problem areas. Search terms like "affordable housing," "study productivity," or "climate action." Look at the trend line: is it rising, stable, or declining? Rising trends indicate growing problems worth solving. Flat or declining? Might not resonate with judges.',
+          'Next, compare solution approaches. Searching for a fitness app? Compare "workout planner" vs. "personal trainer app" vs. "fitness tracker." The highest search volume tells you what language users prefer and which angle to pitch. Use this data in your Devpost submission and presentation.'
+        ],
+        list: [
+          'Go to trends.google.com and search your problem area keyword',
+          'Check the trend direction: rising trends = growing problems',
+          'Click "Compare" to add alternative keywords or solution approaches',
+          'Filter by region to target specific markets (e.g., "United States" for US hackathons)',
+          'Scroll to "Related queries" to discover adjacent problems or features',
+          'Look for "Breakout" queries (marked with up arrow) for emerging opportunities',
+          'Export data as CSV or screenshots for your pitch deck',
+          'Use "Past 5 years" range for long-term validation, "Past 90 days" for urgency'
+        ],
+        imagePlaceholder: 'Screenshot of Google Trends related queries panel showing breakout searches'
+      },
+      {
+        heading: 'Pro Tips for Trend-Based Ideation',
+        paragraphs: [
+          'Cross-reference Google Trends with hackathon sponsor categories. If a hackathon has a "sustainability" track and Google Trends shows "carbon footprint tracker" rising 300%, you\'ve found a validated idea aligned with prizes. This strategic alignment increases your chances of winning sponsor awards.',
+          'Use "Related queries" to discover subproblems. Searching "remote work" might reveal "virtual team building" or "timezone converter" as rising queries. These are specific, solvable problems you can tackle in 24 hours. Judges prefer focused solutions over broad, vague products.'
+        ],
+        list: [
+          'Search sponsor keywords: If Goldman Sachs sponsors, search "fintech" trends',
+          'Look for seasonal spikes: Tax season? Budget apps trend. Back to school? Study tools spike',
+          'Compare your idea to competitors: "Notion" vs "Obsidian" shows market share',
+          'Use YouTube Trends (filter on left): Video content trends reveal demand',
+          'Check "Interest by region": Build region-specific solutions for niche markets',
+          'Combine with GitHub Trending: Tech trends + search trends = winning combo',
+          'Screenshot trend graphs for pitch slides: visual proof of demand',
+          'Search problem + "app" vs problem + "tool" to see preferred format'
+        ],
+        imagePlaceholder: 'Screenshot showing regional interest map and seasonal trend patterns'
+      },
+      {
+        heading: 'Validating Ideas Before You Code',
+        paragraphs: [
+          'Before writing a single line of code, validate your idea with Google Trends. If your target keyword has declining interest or negligible search volume, reconsider. Judges ask "Why does this matter?" and your answer can\'t be "I don\'t know." Show them the trend line instead.',
+          'The best hackathon projects solve problems that are: (1) Rising in search volume, (2) Specific enough to solve in 24 hours, and (3) Aligned with hackathon themes. Google Trends helps you check all three boxes before you commit to building.'
+        ]
+      }
+    ],
+    videoUrl: 'https://www.youtube.com/embed/lMur3dzSKr8'
   }
 }
 
