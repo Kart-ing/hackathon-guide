@@ -59,6 +59,76 @@ const contentMap: Record<string, ResourceContent> = {
       }
     ],
     videoUrl: 'https://www.youtube.com/embed/yzckOD7y7Xw'
+  },
+  'vercel': {
+    sections: [
+      {
+        heading: 'What is Vercel?',
+        paragraphs: [
+          'Vercel is a cloud platform for deploying and hosting web applications with zero configuration. Built by the creators of Next.js, it\'s optimized for modern frontend frameworks and offers instant deployments, automatic HTTPS, and global CDN distribution.',
+          'For hackathons, Vercel is a game-changer. Instead of spending hours configuring servers or wrestling with deployment pipelines, you can go from code to live URL in under 60 seconds. This means more time building features and less time fighting infrastructure.'
+        ],
+        imagePlaceholder: 'Screenshot of Vercel dashboard showing recent deployments'
+      },
+      {
+        heading: 'Why Vercel is Perfect for Hackathons',
+        paragraphs: [
+          'Judges need to see your project live—not just code. A broken "localhost" demo or a "works on my machine" excuse won\'t win prizes. Vercel ensures your project is always accessible with a public URL you can share instantly.',
+          'Speed matters in hackathons. Vercel\'s git integration means every push to GitHub automatically deploys a preview. You can iterate rapidly, share progress with teammates, and have a production-ready demo without any DevOps overhead.'
+        ],
+        list: [
+          'Deploy in 30 seconds: Connect GitHub repo → auto-deploy on every push',
+          'Free tier includes unlimited projects, 100GB bandwidth, and custom domains',
+          'Automatic HTTPS and SSL certificates (no configuration needed)',
+          'Preview deployments for every branch—test features before merging',
+          'Built-in analytics to track demo views and engagement',
+          'Serverless functions for backend APIs without managing servers'
+        ],
+        imagePlaceholder: 'Screenshot of Vercel deployment workflow from GitHub push to live URL'
+      },
+      {
+        heading: 'How to Use Vercel in a Hackathon',
+        paragraphs: [
+          'Start by pushing your project to GitHub (even if it\'s just a basic scaffold). Sign in to Vercel with your GitHub account, click "New Project," and import your repo. Vercel auto-detects frameworks like Next.js, React, Vue, or static HTML and configures everything automatically.',
+          'Once deployed, you get a `.vercel.app` URL instantly. Share this link in your Devpost submission, pitch deck, and with judges. Every time you push code, Vercel redeploys—so your demo is always up-to-date with your latest features.'
+        ],
+        list: [
+          'Sign up at vercel.com with your GitHub account (takes 30 seconds)',
+          'Click "New Project" and import your hackathon repo',
+          'Vercel auto-detects your framework and sets build commands',
+          'Get a live URL immediately (e.g., your-project.vercel.app)',
+          'Push code to GitHub → Vercel auto-deploys in ~1 minute',
+          'Add environment variables in dashboard for API keys (never commit secrets!)',
+          'Use Preview Deployments to share feature branches with teammates',
+          'Upgrade to a custom domain if you want (optional, but looks professional)'
+        ],
+        imagePlaceholder: 'Step-by-step screenshot: Vercel import flow from GitHub to live deployment'
+      },
+      {
+        heading: 'Pro Tips for Hackathon Success',
+        paragraphs: [
+          'Deploy early—even if your project is half-built. Having a live URL from hour 1 gives you a safety net. If your laptop crashes or you run out of time, you still have something to show judges.',
+          'Use Vercel\'s serverless functions for quick backend APIs. Need to call OpenAI, query a database, or proxy requests? Create an `/api` folder in Next.js and Vercel handles the rest. No Express server or Docker containers required.'
+        ],
+        list: [
+          'Deploy a "Coming Soon" page in the first hour to secure your URL',
+          'Use environment variables for API keys (Vercel keeps them secret)',
+          'Share preview URLs with your team to review features before merging',
+          'Add a custom domain for bonus points (yourproject.tech looks better than .vercel.app)',
+          'Enable Vercel Analytics to show judges real-time usage stats in your pitch',
+          'If your build fails, check the build logs in the dashboard—errors are clear and actionable'
+        ],
+        imagePlaceholder: 'Screenshot of Vercel environment variables settings and analytics dashboard'
+      },
+      {
+        heading: 'Common Hackathon Use Cases',
+        paragraphs: [
+          'Most winning projects use Vercel for frontend hosting paired with serverless functions for backend logic. For example: deploy a React dashboard on Vercel, use `/api` routes to call GPT-4, and store data in Firebase or Supabase. No server management, just pure product focus.',
+          'Vercel also excels at static sites with dynamic content. Build a landing page with Next.js, fetch data from external APIs at build time, and deploy in seconds. Judges love fast, polished UIs—and Vercel\'s CDN ensures your demo loads instantly worldwide.'
+        ]
+      }
+    ],
+    videoUrl: 'https://www.youtube.com/embed/06w3-l_TbqI'
   }
 }
 

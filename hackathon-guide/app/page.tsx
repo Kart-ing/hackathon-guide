@@ -2,6 +2,7 @@ import Hero from '../components/Hero'
 import Resources from '../components/Resources'
 import StrategyTips from '../components/StrategyTips'
 import AboutAuthor from '../components/AboutAuthor'
+import FrontMatter from '../components/FrontMatter'
 
 export default function Page() {
   return (
@@ -11,6 +12,9 @@ export default function Page() {
       </section>
       <section id="about">
         <AboutAuthor />
+      </section>
+      <section id="front-matter" className="space-y-6">
+        <FrontMatter />
       </section>
       <section id="resources">
         <Resources />
