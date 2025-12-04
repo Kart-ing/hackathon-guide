@@ -129,6 +129,144 @@ const contentMap: Record<string, ResourceContent> = {
       }
     ],
     videoUrl: 'https://www.youtube.com/embed/06w3-l_TbqI'
+  },
+  'mlh': {
+    sections: [
+      {
+        heading: 'What is Major League Hacking (MLH)?',
+        paragraphs: [
+          'Major League Hacking (MLH) is the official student hackathon league, powering over 200 weekend-long invention competitions annually across North America, Europe, Asia, and Africa. Founded in 2013, MLH has become the gold standard for high-quality, beginner-friendly hackathons.',
+          'MLH doesn\'t just list events—they organize, sponsor, and run them. Every MLH event follows strict quality guidelines: free attendance, inclusive culture, experienced mentors on-site, and transparent judging. For students, this means you\'re guaranteed a well-run experience, not a chaotic weekend.'
+        ],
+        imagePlaceholder: 'Screenshot of MLH season homepage showing upcoming hackathons and regions'
+      },
+      {
+        heading: 'Why MLH is Essential for Hackathon Success',
+        paragraphs: [
+          'MLH hackathons are free, beginner-friendly, and specifically designed for students. Unlike general hackathons that may charge fees or expect professional-level projects, MLH events welcome first-timers with workshops, mentors, and swag. Many attendees code their first project ever at an MLH event.',
+          'The MLH network is also a recruiting pipeline. Sponsors like GitHub, Google, Microsoft, and Meta attend to scout talent. Winning or even participating in an MLH hackathon can lead to internship offers, especially if you showcase your project on LinkedIn and tag sponsors.'
+        ],
+        list: [
+          '200+ hackathons per year across 5 continents, all with verified quality standards',
+          'Free attendance, travel reimbursements, and meals provided at most events',
+          'MLH coaches on-site at every event to help debug, mentor, and answer questions',
+          'Hardware lab with Raspberry Pis, Arduinos, VR headsets, and more (borrow for free)',
+          'Exclusive sponsor challenges with bonus prizes (e.g., "Best use of Twilio API" = $500)',
+          'Community Slack with 150K+ hackers for team formation and networking'
+        ],
+        imagePlaceholder: 'Photo of MLH event with students coding, mentors helping, and swag tables'
+      },
+      {
+        heading: 'How to Use MLH for Your Hackathon Journey',
+        paragraphs: [
+          'Start by browsing the MLH Season calendar at mlh.io/seasons. Events are organized by semester ("MLH Fall 2024," "MLH Spring 2025"), making it easy to plan ahead. Filter by location (in-person vs. virtual) and check eligibility—most require you to be a current student.',
+          'Register early—popular events like PennApps, HackMIT, and TreeHacks fill up in hours. After registering, join the event Discord or Slack. Teams often form there before the event, so introduce yourself, share your skills (frontend, backend, ML, design), and find collaborators.'
+        ],
+        list: [
+          'Visit mlh.io/seasons and filter by your region or virtual events',
+          'Read the event description carefully—note travel reimbursement policies and themes',
+          'Register ASAP (some events use lottery systems, others are first-come)',
+          'Join the pre-event Discord/Slack to find teammates and learn about workshops',
+          'Check sponsor challenges before the event—plan your project around bonus prizes',
+          'Arrive to opening ceremony on time—MLH coaches introduce tools, APIs, and rules',
+          'Submit to Devpost by the deadline (MLH events use Devpost for all submissions)'
+        ],
+        imagePlaceholder: 'Screenshot of MLH event schedule with workshops, meals, and submission deadlines'
+      },
+      {
+        heading: 'Pro Tips for MLH Events',
+        paragraphs: [
+          'MLH events are highly competitive, but they\'re also incredibly supportive. Take advantage of workshops—learn new tools like Firebase, Figma, or OpenAI APIs during the event. Coaches are there to help, so don\'t hesitate to ask for debugging help or architecture advice.',
+          'Focus on sponsor challenges if you want to maximize prize opportunities. Many MLH hackathons have 10+ sponsor prizes on top of the main awards. For example, winning "Best Use of MongoDB" might earn $1,000 even if you don\'t win overall. Read challenge descriptions carefully and integrate sponsor tools genuinely (judges can tell if you force-fit).'
+        ],
+        list: [
+          'Attend the opening ceremony workshop—sponsors demo their APIs and tools',
+          'Use the MLH hardware lab to prototype IoT or VR projects (free checkout)',
+          'Tag @MLHacks on Twitter/X when you ship—they retweet and amplify cool projects',
+          'Take breaks: MLH events have games, karaoke, and midnight snacks to recharge',
+          'Submit to multiple sponsor challenges (one project can win several categories)',
+          'Network with other hackers—exchange contacts, many form long-term teams'
+        ],
+        imagePlaceholder: 'Photo of MLH sponsor booth with swag, stickers, and hardware lab equipment'
+      },
+      {
+        heading: 'Beyond the Weekend: MLH Fellowship & Community',
+        paragraphs: [
+          'MLH also runs the MLH Fellowship, a remote internship program where you contribute to open-source projects, build portfolio projects, or work on production codebases at startups. It\'s a great way to gain real-world experience if you can\'t land a traditional internship.',
+          'The MLH community extends beyond events. Join the MLH Discord to stay connected with hackers worldwide, get notified about new seasons, and participate in online mini-hacks. Many students credit MLH with launching their tech careers—it\'s more than just hackathons, it\'s a movement.'
+        ]
+      }
+    ],
+    videoUrl: 'https://www.youtube.com/embed/2kHPmnobudY'
+  },
+  'hack-club': {
+    sections: [
+      {
+        heading: 'What is Hack Club?',
+        paragraphs: [
+          'Hack Club is a global network of high school coding clubs and hackathons, built by teenagers for teenagers. Unlike traditional CS education, Hack Club is project-based, community-driven, and completely free. It started in 2014 and now spans 400+ clubs in 30+ countries.',
+          'Hack Club is best known for organizing massive, unique hackathons like Assemble (1,000+ high schoolers building hardware projects in San Francisco) and hosting online events like Arcade (a summer coding challenge with prizes). If you\'re in high school or college, Hack Club is the best entry point into hacking culture.'
+        ],
+        imagePlaceholder: 'Photo of Hack Club Assemble event with students building hardware projects'
+      },
+      {
+        heading: 'Why Hack Club is Perfect for Beginners',
+        paragraphs: [
+          'Hack Club events are radically inclusive. There are no prerequisites, no applications, and no "you must know X to participate" barriers. Their philosophy: everyone can code, and the best way to learn is by building real projects with friends.',
+          'The community is also incredibly generous. Hack Club gives away free tools like GitHub Pro, domain names, cloud credits, and even hardware kits. They believe in removing financial barriers so anyone can build, regardless of background.'
+        ],
+        list: [
+          'Free hackathons with no entry fees, no applications—just show up (or join virtually)',
+          'Beginner workshops that teach web dev, game dev, and hardware hacking from scratch',
+          'Free tools: GitHub Student Pack, Hack Club Bank (fiscal sponsorship for projects), domains',
+          'Slack community with 50K+ members—ask questions, share projects, get feedback 24/7',
+          'Shipyard: build and deploy projects, earn "doubloons," redeem for swag and hardware',
+          'Unique events: Assemble (hardware), Epoch (overnight), Outernet (rural hackathons)'
+        ],
+        imagePlaceholder: 'Screenshot of Hack Club Slack workspace with active project channels'
+      },
+      {
+        heading: 'How to Get Involved with Hack Club',
+        paragraphs: [
+          'Start by joining the Hack Club Slack at hackclub.com/slack. Introduce yourself in #introductions, share what you\'re interested in building, and lurk in channels like #ship (where people share daily progress) and #hardware (for Raspberry Pi / Arduino projects).',
+          'If you\'re in high school, consider starting a Hack Club at your school. Hack Club HQ provides free curriculum, stickers, grants for pizza, and a dedicated Slack channel. If you\'re in college, you can still join events and the community—age is just a number in Hack Club.'
+        ],
+        list: [
+          'Join hackclub.com/slack and introduce yourself in #introductions',
+          'Browse #ship to see what others are building—get inspired and share your own projects',
+          'Participate in Arcade: a summer event where you code projects and earn prizes',
+          'Check hackathons.hackclub.com for upcoming events (Assemble, Epoch, etc.)',
+          'Start a Hack Club at your school: get free curriculum, funding, and mentorship',
+          'Use Hack Club Bank to accept donations or sponsorships for your projects/events',
+          'Join workshops in Slack—topics range from "Intro to Web Dev" to "Building AI Apps"'
+        ],
+        imagePlaceholder: 'Screenshot of Hack Club hackathons page showing event calendar and registration'
+      },
+      {
+        heading: 'Pro Tips for Hack Club Events',
+        paragraphs: [
+          'Hack Club hackathons prioritize vibes and creativity over perfection. Don\'t stress about building the "best" project—focus on building something fun, weird, or useful. Judges love personality and storytelling over polished code.',
+          'Take advantage of Hack Club\'s free resources. Apply for the GitHub Grant (free credits), use Shipyard to deploy projects, and redeem doubloons for hardware like Raspberry Pis or Arduino kits. The more you engage, the more opportunities you unlock.'
+        ],
+        list: [
+          'Ship daily on #ship in Slack—even small progress counts and builds momentum',
+          'Collaborate across timezones—Hack Club is global, so you can pair-program anytime',
+          'Attend Hack Club meetups (Assemble, Epoch) in person—friendships formed IRL are powerful',
+          'Use Sprig (Hack Club\'s game engine) to build retro games and win a custom handheld console',
+          'Contribute to OnBoard: design a PCB, get it manufactured for free, share your process',
+          'Ask questions fearlessly—Hack Club\'s culture is "there are no dumb questions"'
+        ],
+        imagePlaceholder: 'Photo of Hack Club swag, stickers, and hardware kits (Raspberry Pi, Sprig console)'
+      },
+      {
+        heading: 'Hack Club Philosophy: Optimism & Agency',
+        paragraphs: [
+          'Hack Club believes teenagers are capable of extraordinary things when given the right tools and community. The culture is optimistic, high-energy, and radically transparent. Everything—from financials to event planning—happens in public Slack channels.',
+          'If you\'re someone who wants to build, learn, and connect with like-minded creators, Hack Club is your home. Whether you\'re coding your first website or launching a startup, the community will cheer you on and help you ship.'
+        ]
+      }
+    ],
+    videoUrl: 'https://www.youtube.com/embed/2BID8_pGuqA'
   }
 }
 
