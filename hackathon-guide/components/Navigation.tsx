@@ -14,7 +14,11 @@ export default function Navigation() {
   return (
     <header className="sticky top-0 z-20 backdrop-blur bg-black/30 border-b border-white/10">
       <nav className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-        <a href="#home" className="font-bold tracking-wide text-primary">HackGuide</a>
+        <a href="#home" className="font-bold tracking-wide text-primary flex items-center gap-2">
+          <span className="text-2xl">⚡</span>
+          <span className="hidden sm:inline">Midnight Hacker</span>
+          <span className="sm:hidden">MH</span>
+        </a>
         <div className="hidden md:flex items-center gap-6">
           {links.map(l => (
             <a key={l.href} href={l.href} className="hover:text-primary transition-colors">
