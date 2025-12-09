@@ -14,13 +14,15 @@ export default function ResourcePage({ params }: { params: { slug: string } }) {
   const content = getResourceContent(item.slug)
   
   return (
-    <div className="py-12 max-w-4xl">
-      <Link href="/" className="opacity-70 hover:opacity-100 hover:text-primary transition-colors">← Back to Home</Link>
-      
+    <div className="py-8 sm:py-12 max-w-4xl px-4 sm:px-0">
+      <Link href="/" className="inline-block opacity-70 hover:opacity-100 hover:text-primary transition-colors py-2 touch-manipulation">
+        ← Back to Home
+      </Link>
+
       <header className="mt-6 border-b border-white/10 pb-6">
-        <h1 className="text-4xl font-bold">{item.title}</h1>
-        <p className="mt-2 text-secondary">Category: {item.category}</p>
-        <p className="mt-3 text-lg opacity-90">{item.description}</p>
+        <h1 className="text-3xl sm:text-4xl font-bold leading-tight">{item.title}</h1>
+        <p className="mt-2 text-sm sm:text-base text-secondary">Category: {item.category}</p>
+        <p className="mt-3 text-base sm:text-lg opacity-90 leading-relaxed">{item.description}</p>
       </header>
 
       {content && (
@@ -30,8 +32,8 @@ export default function ResourcePage({ params }: { params: { slug: string } }) {
             <>
               {/* First section */}
               <section>
-                <h2 className="text-2xl font-semibold mb-3">{content.sections[0].heading}</h2>
-                <div className="space-y-3 opacity-90">
+                <h2 className="text-xl sm:text-2xl font-semibold mb-3">{content.sections[0].heading}</h2>
+                <div className="space-y-3 opacity-90 text-sm sm:text-base leading-relaxed">
                   {content.sections[0].paragraphs.map((p, j) => <p key={j}>{p}</p>)}
                 </div>
                 {content.sections[0].list && (
@@ -60,9 +62,9 @@ export default function ResourcePage({ params }: { params: { slug: string } }) {
               
               {/* Video after first section */}
               {content.videoUrl && (
-                <section className="my-8">
-                  <h2 className="text-2xl font-semibold mb-4">{content.videoTitle || 'Video Tutorial'}</h2>
-                  <div className="aspect-video rounded overflow-hidden border border-white/10">
+                <section className="my-8 -mx-4 sm:mx-0">
+                  <h2 className="text-xl sm:text-2xl font-semibold mb-4 px-4 sm:px-0">{content.videoTitle || 'Video Tutorial'}</h2>
+                  <div className="aspect-video rounded-none sm:rounded overflow-hidden border-y sm:border border-white/10">
                     <iframe
                       width="100%"
                       height="100%"
@@ -75,12 +77,12 @@ export default function ResourcePage({ params }: { params: { slug: string } }) {
                   </div>
                 </section>
               )}
-              
+
               {/* Remaining sections */}
               {content.sections.slice(1).map((section, i) => (
                 <section key={i + 1}>
-                  <h2 className="text-2xl font-semibold mb-3">{section.heading}</h2>
-                  <div className="space-y-3 opacity-90">
+                  <h2 className="text-xl sm:text-2xl font-semibold mb-3">{section.heading}</h2>
+                  <div className="space-y-3 opacity-90 text-sm sm:text-base leading-relaxed">
                     {section.paragraphs.map((p, j) => <p key={j}>{p}</p>)}
                   </div>
                   {section.list && (
@@ -113,8 +115,8 @@ export default function ResourcePage({ params }: { params: { slug: string } }) {
           {/* For all other resources, show sections normally */}
           {item.slug !== 'hack-club' && content.sections.map((section, i) => (
             <section key={i}>
-              <h2 className="text-2xl font-semibold mb-3">{section.heading}</h2>
-              <div className="space-y-3 opacity-90">
+              <h2 className="text-xl sm:text-2xl font-semibold mb-3">{section.heading}</h2>
+              <div className="space-y-3 opacity-90 text-sm sm:text-base leading-relaxed">
                 {section.paragraphs.map((p, j) => <p key={j}>{p}</p>)}
               </div>
               {section.list && (
@@ -146,9 +148,9 @@ export default function ResourcePage({ params }: { params: { slug: string } }) {
       )}
 
       {content && content.videoUrl && item.slug !== 'hack-club' && (
-        <section className="mt-10">
-          <h2 className="text-2xl font-semibold mb-4">{content.videoTitle || 'Video Tutorial'}</h2>
-          <div className="aspect-video rounded overflow-hidden border border-white/10">
+        <section className="mt-10 -mx-4 sm:mx-0">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-4 px-4 sm:px-0">{content.videoTitle || 'Video Tutorial'}</h2>
+          <div className="aspect-video rounded-none sm:rounded overflow-hidden border-y sm:border border-white/10">
             <iframe
               width="100%"
               height="100%"
@@ -162,16 +164,19 @@ export default function ResourcePage({ params }: { params: { slug: string } }) {
         </section>
       )}
 
-      <div className="mt-12 flex gap-4 border-t border-white/10 pt-6">
-        <a 
-          href={item.url} 
-          target="_blank" 
-          rel="noreferrer" 
-          className="px-5 py-2.5 rounded bg-primary/20 border border-primary/40 text-primary hover:bg-primary/30 transition-colors"
+      <div className="mt-12 flex flex-col sm:flex-row gap-3 sm:gap-4 border-t border-white/10 pt-6">
+        <a
+          href={item.url}
+          target="_blank"
+          rel="noreferrer"
+          className="px-5 py-3 rounded bg-primary/20 border border-primary/40 text-primary hover:bg-primary/30 transition-colors text-center touch-manipulation active:scale-98"
         >
           Visit {item.title} →
         </a>
-        <Link href="/" className="px-5 py-2.5 rounded border border-white/10 hover:border-white/20 transition-colors">
+        <Link
+          href="/"
+          className="px-5 py-3 rounded border border-white/10 hover:border-white/20 transition-colors text-center touch-manipulation active:scale-98"
+        >
           Back to Resources
         </Link>
       </div>

@@ -11,7 +11,13 @@ const jetbrains = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrai
 export const metadata: Metadata = {
   title: 'HackGuide | Midnight Hacker Kit',
   description: 'Curated resources, tools, and winning strategies for hackathons.',
-  metadataBase: new URL('https://hackguide.vercel.app')
+  metadataBase: new URL('https://hackguide.vercel.app'),
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

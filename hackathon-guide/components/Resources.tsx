@@ -20,10 +20,10 @@ export default function Resources() {
   }
 
   return (
-    <div>
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">Resource Hub</h2>
-        <div className="flex items-center gap-2 text-sm opacity-70">
+    <div className="py-8 sm:py-0">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-3">
+        <h2 className="text-xl sm:text-2xl font-semibold">Resource Hub</h2>
+        <div className="flex items-center gap-2 text-xs sm:text-sm opacity-70">
           <Filter size={16} />
           Filter by category
         </div>
@@ -33,35 +33,36 @@ export default function Resources() {
           <button
             key={cat}
             onClick={() => setActive(cat)}
-            className={`px-3 py-1.5 rounded border text-sm ${active === cat ? 'border-primary text-primary' : 'border-white/10 hover:border-white/20'}`}
+            className={`px-3 py-2 rounded border text-xs sm:text-sm touch-manipulation active:scale-95 transition-transform ${active === cat ? 'border-primary text-primary bg-primary/5' : 'border-white/10 hover:border-white/20'}`}
           >
             {cat}
           </button>
         ))}
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
         {filtered.map(item => (
           <Link href={`/resources/${item.slug}`} key={item.title}>
             <motion.article
               whileHover={{ y: -4, scale: 1.01 }}
+              whileTap={{ scale: 0.98 }}
               transition={{ type: 'spring', stiffness: 350, damping: 24 }}
-              className="card-hover rounded-lg border border-white/10 bg-[var(--card)]/80 p-4 cursor-pointer h-full"
+              className="card-hover rounded-lg border border-white/10 bg-[var(--card)]/80 p-5 cursor-pointer h-full touch-manipulation"
             >
-              <div className="flex items-start justify-between gap-2">
-                <div>
-                  <h3 className="font-semibold text-lg hover:text-primary">
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex-1">
+                  <h3 className="font-semibold text-base sm:text-lg hover:text-primary leading-snug">
                     {item.title}
                   </h3>
-                  <p className="text-sm opacity-80 mt-1">{item.description}</p>
+                  <p className="text-sm opacity-80 mt-2 leading-relaxed">{item.description}</p>
                 </div>
-                <div className="text-primary" aria-label="Open details">
+                <div className="text-primary flex-shrink-0 mt-1" aria-label="Open details">
                   <ExternalLink size={18} />
                 </div>
               </div>
-              <div className="mt-3 flex items-center gap-2 text-xs opacity-70">
-                <span className="px-2 py-0.5 rounded bg-white/5 border border-white/10">{item.category}</span>
-                <button 
-                  className="hover:text-primary" 
+              <div className="mt-4 flex items-center gap-2 text-xs opacity-70">
+                <span className="px-2 py-1 rounded bg-white/5 border border-white/10">{item.category}</span>
+                <button
+                  className="hover:text-primary touch-manipulation py-1"
                   onClick={(e) => {
                     e.preventDefault()
                     onCopy(item)
