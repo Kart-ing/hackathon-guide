@@ -7,11 +7,11 @@ export default function AboutAuthor() {
 
       <div className="space-y-4 opacity-90 text-sm sm:text-base leading-relaxed">
         <p>
-          Hey! I'm <span className="text-primary font-semibold">Kartikey Pandey</span>, a computer science student at Penn State with a passion for hackathons and building innovative projects.
+          Hey! I'm <span className="text-primary font-semibold">Kartikey Pandey</span>. I studied computer science at Penn State.
         </p>
 
         <p>
-          I've won in 9+ hackathons, gotten multiple awards, and helped organize teams participating in Hackathons in the PSU CS Community. This guide is a collection of resources and strategies I've learned through hundreds of hours of hacking, mentoring, and judging projects.
+          I've won 13 prizes at 12 hackathons and founded Penn State's collegiate hackathon team. This guide collects the resources and strategies I picked up along the way.
         </p>
 
         <div className="pt-4 border-t border-white/10">
@@ -19,15 +19,11 @@ export default function AboutAuthor() {
           <ul className="space-y-2.5 text-xs sm:text-sm">
             <li className="flex items-start gap-2">
               <Award size={16} className="text-accent mt-0.5 flex-shrink-0" />
-              <span>Winner at MLH hackathons including PennApps, HackPSU, and others</span>
+              <span>Prizes at hackathons including HackPSU, HackHarvard, Bitcamp, MHacks, Cal Hacks and the UC Berkeley AI Hackathon</span>
             </li>
             <li className="flex items-start gap-2">
               <Award size={16} className="text-accent mt-0.5 flex-shrink-0" />
-              <span>Mentor and workshop leader at Penn State hackathons</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <Award size={16} className="text-accent mt-0.5 flex-shrink-0" />
-              <span>Active contributor to open-source projects on GitHub</span>
+              <span>Founded the Penn State Collegiate Hackathon Team, which went from #185 to #74 (merit rank) in one year</span>
             </li>
           </ul>
         </div>
